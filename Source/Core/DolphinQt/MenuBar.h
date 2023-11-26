@@ -125,6 +125,9 @@ signals:
   void RecordingStatusChanged(bool recording);
   void ReadOnlyModeChanged(bool read_only);
 
+
+  // Mod Loader
+  void OpenCVarsMenu();
 private:
   void OnEmulationStateChanged(Core::State state);
   void OnConfigChanged();
@@ -148,6 +151,8 @@ private:
   void AddMovieMenu();
   void AddJITMenu();
   void AddSymbolsMenu();
+  void AddModLoaderMenu();
+  void AddPrimeHackMenu();
 
   void UpdateStateSlotMenu();
 
