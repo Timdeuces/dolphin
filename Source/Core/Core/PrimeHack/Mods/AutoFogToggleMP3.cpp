@@ -6,10 +6,11 @@ namespace prime
 {
   void AutoFogToggleMP3::run_mod(Game game, Region region)
   {
-    if ( game != Game::PRIME_3 && game != Game::PRIME_3_STANDALONE)
+    if (game != Game::PRIME_3 && game != Game::PRIME_3_STANDALONE)
     {
       return;
     }
+
     bool should_use = false;
 
     LOOKUP_DYN(active_visor);
